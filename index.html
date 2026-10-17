@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>XM Mint — App Landing</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --bg-2: #111733;
+    --card: rgba(255, 255, 255, 0.06);
+    --border: rgba(255, 255, 255, 0.12);
+    --text: #e7ecff;
+    --muted: #9aa6c4;
+    --accent: #6ee7b7;
+    --accent-2: #60a5fa;
+    --warning: #fbbf24;
+    --danger: #f87171;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background:
+      radial-gradient(1200px 600px at 10% -10%, rgba(96,165,250,0.18), transparent 60%),
+      radial-gradient(900px 500px at 110% 10%, rgba(110,231,183,0.14), transparent 60%),
+      var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+  }
+  .logo {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent-2), var(--accent));
+    display: grid;
+    place-items: center;
+    color: #0b1020;
+    font-weight: 800;
+  }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+  }
+  nav a:hover { color: var(--text); }
+  .hero {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 32px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    margin: 0 0 12px;
+    line-height: 1.2;
+  }
+  .hero p {
+    color: var(--muted);
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+  .pill {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(110,231,183,0.14);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent-2), var(--accent));
+    color: #0b1020;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  .btn.secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+  }
+  .card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  .section h2 {
+    margin-top: 0;
+    font-size: 22px;
+  }
+  .muted { color: var(--muted); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">XM</div>
+        <span>XM Mint</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="Support.html">Support</a>
+        <a href="Terms%20of%20Use.html">Terms of Use</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="pill">Available on the App Store</span>
+      <h1>XM Mint — Your private investment portfolio tracker</h1>
+      <p>Track every position across stocks, ETFs, crypto, bonds, commodities, and real estate. Fully interactive analytics, completely on-device, no account required.</p>
+      <a class="btn" href="mailto:huelmelissa1841991@gmail.com">Contact Support</a>
+      <a class="btn secondary" href="privacy.html">Read Privacy Policy</a>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>All-in-one dashboard</h3>
+        <p>Net worth, day change, YTD dividends, allocation, top movers and 12-month cash flow at a glance.</p>
+      </div>
+      <div class="card">
+        <h3>Deep insights</h3>
+        <p>Compare cost basis, visualize sector concentration, see top gainers and assess diversification risk.</p>
+      </div>
+      <div class="card">
+        <h3>Planning tools</h3>
+        <p>Goal projections, DCA simulator, rebalancer with drift scoring, ROI calculator and risk questionnaire.</p>
+      </div>
+      <div class="card">
+        <h3>Stays on device</h3>
+        <p>No login, no cloud sync, no telemetry. Export or import your full portfolio as JSON anytime.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tracking Disclosure</h2>
+      <p class="muted">This section explains the data XM Mint collects, in plain language.</p>
+      <p><strong>XM Mint does not track you.</strong> The app does not use any third-party analytics SDK, advertising SDK, attribution SDK, or fingerprinting technology. We do not collect device identifiers (such as IDFA, IDFV, or GAID), advertising IDs, IP addresses for tracking purposes, cookies, or web beacons. We do not record your interactions, taps, screens visited, sessions, or crash reports in a way that can identify you or your device.</p>
+      <p>All portfolio, transaction, receipt and image data you create in XM Mint is stored locally on your device using the app's private sandbox. The developer cannot access this data, and it is never transmitted to any server operated by the developer or any third party.</p>
+      <p>The only network requests XM Mint may make are to publicly available market data endpoints used to refresh displayed price information for assets you have manually added. These requests do not contain personal identifiers and are not used to track users. You can disable price refresh at any time in Settings.</p>
+      <p>If you choose to contact support by email at <a href="mailto:huelmelissa1841991@gmail.com" style="color:var(--accent)">huelmelissa1841991@gmail.com</a>, we will receive only the information you voluntarily include in your message. We use it solely to respond to your request and delete it once it is no longer needed.</p>
+      <p>XM Mint does not access your contacts, microphone, calendar, location, health data, or any iCloud-synced content beyond what iOS itself may surface to user-installed apps in general.</p>
+      <p>If we ever introduce a feature that requires tracking (for example, optional cloud backup or crash reporting), we will update this disclosure, update the Privacy Policy, and request your consent before any tracking begins, in full compliance with the App Store Tracking policy and applicable privacy laws.</p>
+    </section>
+
+    <section class="section">
+      <h2>What's new in version 1.0</h2>
+      <ul>
+        <li>Dashboard with net worth, day change, dividends, allocation and cash flow.</li>
+        <li>Holding-level candlestick charts with MA7/MA25 and OHLC stats.</li>
+        <li>Sector heatmap, top movers and diversification risk profile.</li>
+        <li>Goal projections, DCA simulator, rebalancer and risk questionnaire.</li>
+        <li>JSON export/import for full portfolio backup.</li>
+        <li>Receipt and image attachments via camera and photo library.</li>
+      </ul>
+    </section>
+
+    <footer>
+      © 2026 XM Mint. All rights reserved. · <a href="mailto:huelmelissa1841991@gmail.com" style="color:var(--accent)">huelmelissa1841991@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
